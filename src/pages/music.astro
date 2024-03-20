@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { GiSnailEyes } from "react-icons/gi";
+import { IoArrowBackCircleSharp } from "react-icons/io5";
+import '@fontsource/bokor'
+const videoIDs = [
+    "cb-A4IiQs4I",
+    "rBbJ-xSfrtw",
+    "2kPZ-jZOpE8",
+    "uSfqxxhp4HU?si=ZB4yBam3RfHRa81h",
+    "CVjnzsWtOKg",
+    "I6KIkBbII5w",
+    "TnzfTlmV5FU",
+    "H1kwpJ2smho"
+]
+---
+
+<Layout title="LazSnail | Music">
+    <style>
+        h1 {
+            font-weight: bold;
+            font-size: 40px;
+            font-family: 'Bokor', system-ui;
+        }
+    </style>
+
+    <main class="relative m-auto min-h-screen min-w-screen flex flex-col items-center p-2">
+        <h1 class="text-black text-center mt-5 tracking-wider">Music Wall</h1>
+        <div class="relative w-11/12 max-w-[560px]">
+            <a href="/" class="absolute max-w-[600px] hover:scale-110 transition">
+                <IoArrowBackCircleSharp size={30}/>
+            </a>
+        </div>
+        <div transition:name="snail" class="mt-5">
+            <GiSnailEyes size={50} />
+        </div>
+        <div class="my-6 w-full flex flex-col items-center gap-6">
+            {
+                videoIDs.map(id => (
+                <iframe width="560" height="315" class="w-11/12 max-w-[560px] rounded-lg shadow-box-black-video border-4 border-black" src={`https://www.youtube.com/embed/${id}?si=ajThYB8Y0AyBCz5G`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                ))
+            }
+        </div>
+    </main>
+
+</Layout>

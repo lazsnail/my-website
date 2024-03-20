@@ -1,0 +1,200 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { GiSnailEyes } from "react-icons/gi";
+import { IoArrowBackCircleSharp } from "react-icons/io5";
+import '@fontsource/bokor'
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
+---
+
+<Layout title="LazSnail | Programming">
+    <style>
+        h1 {
+            font-weight: bold;
+            font-size: 40px;
+            font-family: 'Bokor', system-ui;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 35px;
+            font-family: 'Bokor', system-ui;
+        }
+    </style>
+
+    <main class="relative m-auto min-h-screen min-w-screen flex flex-col items-center p-2">
+        <h1 class="text-black text-center mt-5 tracking-wider">Programming</h1>
+        <div class="relative w-11/12 max-w-[560px]">
+            <a href="/" class="absolute max-w-[600px] hover:scale-110 transition">
+                <IoArrowBackCircleSharp size={30}/>
+            </a>
+        </div>
+        <div transition:name="snail" class="mt-5">
+            <GiSnailEyes size={50} />
+        </div>
+
+        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+            <span class="font-bold text-xl">Welcome to my corner of the internet.</span>
+            <span>
+                I'm Larry, a passionate software developer, aspiring musician and all around enjoyer of all things tech. 
+            </span>
+            <span>
+                My programming journey began in middle school with coding courses and assembling PCs. It has since led me through university and across various startups, each step deepening my knowledge and passion for technology and innovation.
+            </span>
+        </div>
+
+        <h2 class="text-black text-center mt-10 tracking-wider">My Tech Stack</h2>
+
+        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+            <b>
+                Here's some of the technology I've been working with recently:
+            </b>
+            <ul class="flex gap-3 justify-center flex-wrap font-semibold">
+                <li>
+                    TypeScript
+                </li>
+                <li>
+                    JavaScript (ES6)
+                </li>
+                <li>
+                    HTML
+                </li>
+                <li>
+                    CSS
+                </li>
+                <li>
+                    Tailwind
+                </li>
+                <li>
+                    React
+                </li>
+                <li>
+                    Next.js
+                </li>
+                <li>
+                    Node.js
+                </li>
+                <li>
+                    Astro
+                </li>
+                <li>
+                    Github
+                </li>
+                <li>
+                    Vercel
+                </li>
+                <li>
+                    Docker
+                </li>
+                <li>
+                    Jest
+                </li>
+            </div>
+        </div>
+
+        <h2 class="text-black text-center mt-10 tracking-wider">My Work</h2>
+        
+        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+            <i>Software Developer</i>
+            <a 
+                href="https://www.jensenlabs.dev/"
+                target="_blank"
+                class="font-bold text-xl underline underline-offset-4"
+            >
+                Jensen Labs
+            </a>
+            <span>2023 - Present</span>
+            <span>
+                Collaboration project with peers from the University of Queensland to develop industry-ready applications as contractors. Using <b>React</b> with <b>Next.js</b>, <b>TypeScript</b>, and <b>Azure</b>, I led the creation of <b>Full-Stack software</b>. Employing a peer-programming system, we crafted effective solutions for clients, ensuring <b>quality</b> and <b>innovation</b> throughout the process.
+            </span>
+        </div>
+        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+            <i>Intern Software Developer</i>    
+            <a
+                href="https://www.autop.online/"
+                target="_blank"
+                class="font-bold text-xl underline underline-offset-4"
+            >
+                Autop Pty Ltd
+            </a>
+            <span>2021 - 2022</span>
+            <span>
+                Played a pivotal role in implementing features and resolving issues for a widely utilized business analytics software. My responsibilities spanned both <b>Front-End and Back-End tasks</b>, employing technologies like <b>Flutter/Dart</b>, <b>Python</b>, <b>Firebase</b>, and <b>AWS</b>. Collaborating closely with fellow programmers, I ensured efficient and effective task implementations. Utilizing <b>CI/CD pipelines</b>, along with practices like <b>pull requests</b>, <b>code reviews</b>, and <b>integration testing</b>, I upheld a high standard of quality throughout the development process.
+            </span>
+        </div>
+
+        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+            <i>Bachelor of Computer Science</i>
+            <a
+                href="https://www.uq.edu.au/"
+                target="_blank"
+                class="font-bold text-xl underline underline-offset-4"
+            >
+                University of Queensland
+            </a>
+            <span>2019 - 2023</span>
+            <span>
+                Pursued and completed a <b>Computer Science degree</b>, majoring in <b>Cyber Security</b>. Throughout my studies, I developed a diverse skill set and engaged in <b>collaborative projects</b>, exploring various facets of Computer Science. This journey not only deepened my understanding of the field but also honed my abilities in <b>teamwork</b> and <b>problem-solving</b>, essential for professional success.
+            </span>
+        </div>
+
+        <h2 class="text-black text-center mt-10 tracking-wider">My Projects</h2>
+        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+            <i>Featured Project</i>
+            <span class="font-bold text-xl">Password Manager</span>
+            <span>A <b>web-based</b> password manager to securely upload, edit and retrieve passwords online. Uses <b>PBKDF2 encryption</b> to securely store user's passwords. Built using <b>TypeScript</b> in <b>Next.js</b></span>
+            <div class="w-full flex justify-center gap-5 mt-1">
+                <a 
+                    href="https://github.com/lazsnail/password-manager" 
+                    target="_blank"
+                    class="hover:scale-110 transition"
+                >
+                    <FaGithub size={25}/>
+                </a>
+                <a 
+                    href="https://master.d3rgy52lgn01np.amplifyapp.com/login"
+                    target="_blank"
+                    class="hover:scale-110 transition"
+                >
+                    <FaExternalLinkAlt size={25}/>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+            <i>Featured Project</i>
+            <span class="font-bold text-xl">Botnet</span>
+            <span>A fully developed botnet project featuring a <b>C2 server</b> for the command server, <b>nameserver</b> to provide a fixed static endpoint and <b>executable</b> for the bot program. Built using <b>C# (WPF)</b> and <b>Python</b>.</span>
+            <div class="w-full flex justify-center gap-5 mt-1">
+                <a 
+                    href="https://github.com/Angus-Moore-Dev/coms4507-project"
+                    target="_blank"
+                    class="hover:scale-110 transition"
+                >
+                    <FaGithub size={25}/>
+                </a>
+                <a 
+                    href="https://www.youtube.com/watch?v=y50x6bkOnEY"
+                    target="_blank"
+                    class="hover:scale-110 transition"
+                >
+                    <FaExternalLinkAlt size={25}/>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg my-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+            <i>Featured Project</i>
+            <span class="font-bold text-xl">This Website</span>
+            <span>Loosely designed in <b>Figma</b>, built using <b>Astro</b>. I hope you like it :D</span>
+            <div class="w-full flex justify-center gap-5 mt-1">
+                <a 
+                    href="https://github.com/lazsnail/my-website" 
+                    target="_blank"
+                    class="hover:scale-110 transition"
+                >
+                    <FaGithub size={25}/>
+                </a>
+            </div>
+        </div>
+    </main>
+</Layout>

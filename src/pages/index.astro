@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '@fontsource/bokor'
+import { GiSnailEyes } from "react-icons/gi";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import WM_logo from "../../public/wm_logo_black.png"
+import { Image } from 'astro:assets';
+---
+
+<Layout title="LazSnail | Home">
+    <style>
+        h1 {
+            font-weight: bold;
+            font-size: 40px;
+            font-family: 'Bokor', system-ui;
+        }
+    </style>
+	<main class="m-auto min-h-screen min-w-screen flex flex-col items-center p-2">
+        <div class="mt-5">
+            <h1 class="text-black tracking-wider">LazSnail</h1>
+        </div>
+        <div transition:name="snail" class="mt-5">
+            <GiSnailEyes size={50} />
+        </div>
+
+        <button class="mt-5 relative flex group justify-center w-11/12 max-w-[350px] rounded-full bg-white font-bold hover:-translate-y-0.5 transition-all ease-in-out active:translate-y-0.5">
+            <span class="absolute rounded-full h-full top-0 left-0 w-full translate-y-[4px] group-hover:translate-y-[8px] group-active:translate-y-[0px] transition ease-in-out will-change-transform bg-black"></span>
+            <a 
+                href="/music"
+                class="flex justify-center gap-2 group-hover:gap-3 transition-all relative w-full h-full bg-white rounded-full border-4 border-black p-2"
+            >
+                <span>
+                    -
+                </span>
+                <span class="tracking-widest">
+                    Music
+                </span>
+                <span>
+                    -
+                </span>
+            </a>
+        </button>
+        <button class="mt-4 relative flex group justify-center w-11/12 max-w-[350px] rounded-full bg-white font-bold hover:-translate-y-0.5 transition-all ease-in-out active:translate-y-0.5">
+            <span class="absolute rounded-full h-full top-0 left-0 w-full translate-y-[4px] group-hover:translate-y-[8px] group-active:translate-y-[0px] transition ease-in-out will-change-transform bg-black"></span>
+            <a 
+                class="flex justify-center gap-2 group-hover:gap-3 transition-all relative w-full h-full bg-white rounded-full border-4 border-black p-2"
+                href="/programming"
+            >
+                <span>
+                    -
+                </span>
+                <span class="tracking-widest">
+                    Programming
+                </span>
+                <span>
+                    -
+                </span>
+            </a>
+        </button>
+
+        <div class="flex flex-wrap gap-x-7 gap-y-4 items-start justify-center mt-10">
+            <a 
+                href="https://www.youtube.com/@lazsnail" 
+                target="_blank"
+                class="hover:scale-110 transition"
+            >
+                <FaYoutube size={30} />
+            </a>
+            <a 
+                href="https://www.linkedin.com/in/larry-bain-05b954155/" 
+                target="_blank"
+                class="hover:scale-110 transition"
+            >
+                <FaLinkedin size={30}/>
+            </a>
+            <a 
+                href="https://github.com/lazsnail" 
+                target="_blank"
+                class="hover:scale-110 transition"
+            >
+                <FaGithub size={30} />
+            </a>
+            <a
+                class="hover:scale-110 transition"
+            >
+                <Image src={WM_logo} alt="WM Logo" class="w-[22px]" />
+            </a>
+        </div>
+        
+    </main>
+</Layout>
