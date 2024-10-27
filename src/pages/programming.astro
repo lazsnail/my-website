@@ -19,6 +19,23 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             font-size: 35px;
             font-family: 'Bokor', system-ui;
         }
+        .box-card {
+            background-color: white;
+            padding: 1rem;
+            font-weight: 600;
+            border-width: 4px;
+            --tw-border-opacity: 1;
+            border-color: rgb(0 0 0 / var(--tw-border-opacity)) /* #000000 */;
+            border-radius: 0.5rem /* 8px */;
+            margin-top: 1.75rem /* 28px */;
+            width: 91.666667%;
+            max-width: 500px;
+            text-align: center;
+            letter-spacing: 0.025em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem /* 8px */;
+        }
     </style>
 
     <main class="relative m-auto min-h-screen min-w-screen flex flex-col items-center p-2">
@@ -32,7 +49,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             <GiSnailEyes size={50} />
         </div>
 
-        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+        <div class="box-card shadow-box-black-video">
             <span class="font-bold text-xl">Welcome to my corner of the internet.</span>
             <span>
                 I'm Larry, a passionate software developer, aspiring musician and all around enjoyer of all things tech. 
@@ -44,7 +61,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
         <h2 class="text-black text-center mt-10 tracking-wider">My Tech Stack</h2>
 
-        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+        <div class="box-card shadow-box-black-video">
             <b>
                 Here's some of the technology I've been working with recently:
             </b>
@@ -92,8 +109,25 @@ import { FaExternalLinkAlt } from "react-icons/fa";
         </div>
 
         <h2 class="text-black text-center mt-10 tracking-wider">My Work</h2>
+
+        <div class="box-card shadow-box-black-video">
+            <i>Junior Full Stack Engineer</i>
+            <a 
+                href="https://www.fctgl.com/"
+                target="_blank"
+                class="font-bold text-xl underline underline-offset-4"
+            >
+                Flight Centre
+            </a>
+            <span>2024 - Present</span>
+            <span>
+                Played a key role in replatforming a website, migrating from an outdated tech stack to a modern <b>Next.js</b> application. 
+                Worked across multiple codebases, focusing on <b>Front-End</b> development tasks like building reusable components, as well as <b>Back-End</b> and <b>DevOps</b> responsibilities, 
+                including managing <b>AWS</b> hosting. Actively contributed to the <b>developer culture</b> by delivering presentations on technologies I'm passionate about.
+            </span>
+        </div>
         
-        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+        <div class="box-card shadow-box-black-video">
             <i>Software Developer</i>
             <a 
                 href="https://www.jensenlabs.dev/"
@@ -102,12 +136,13 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             >
                 Jensen Labs
             </a>
-            <span>2023 - Present</span>
+            <span>2023 - 2024</span>
             <span>
                 Collaboration project with peers from the University of Queensland to develop industry-ready applications as contractors. Using <b>React</b> with <b>Next.js</b>, <b>TypeScript</b>, and <b>Azure</b>, I led the creation of <b>Full-Stack software</b>. Employing a peer-programming system, we crafted effective solutions for clients, ensuring <b>quality</b> and <b>innovation</b> throughout the process.
             </span>
         </div>
-        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+
+        <div class="box-card shadow-box-black-video">
             <i>Intern Software Developer</i>    
             <a
                 href="https://www.autop.online/"
@@ -122,7 +157,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             </span>
         </div>
 
-        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+        <div class="box-card shadow-box-black-video">
             <i>Bachelor of Computer Science</i>
             <a
                 href="https://www.uq.edu.au/"
@@ -138,7 +173,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
         </div>
 
         <h2 class="text-black text-center mt-10 tracking-wider">My Projects</h2>
-        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+
+        <div class="box-card shadow-box-black-video">
             <i>Featured Project</i>
             <span class="font-bold text-xl">Password Manager</span>
             <span>A <b>web-based</b> password manager to securely upload, edit and retrieve passwords online. Uses <b>PBKDF2 encryption</b> to securely store user's passwords. Built using <b>TypeScript</b> in <b>Next.js</b></span>
@@ -160,7 +196,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             </div>
         </div>
 
-        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg mt-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+        <div class="box-card shadow-box-black-video">
             <i>Featured Project</i>
             <span class="font-bold text-xl">Botnet</span>
             <span>A fully developed botnet project featuring a <b>C2 server</b> for the command server, <b>nameserver</b> to provide a fixed static endpoint and <b>executable</b> for the bot program. Built using <b>C# (WPF)</b> and <b>Python</b>.</span>
@@ -182,7 +218,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             </div>
         </div>
 
-        <div class="bg-white p-4 font-semibold border-4 border-black shadow-box-black-video rounded-lg my-7 w-11/12 max-w-[500px] text-center tracking-wide flex flex-col gap-2">
+        <div class="box-card shadow-box-black-video2">
             <i>Featured Project</i>
             <span class="font-bold text-xl">This Website</span>
             <span>Loosely designed in <b>Figma</b>, built using <b>Astro</b>. I hope you like it :D</span>
