@@ -9,6 +9,12 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 <Layout title="LazSnail | Programming">
     <style>
+        body {
+		    font-family: system-ui, sans-serif;
+		    background: linear-gradient(to left, #2cf8ff, #00a2ff);
+		    background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+	    }
         h1 {
             font-weight: bold;
             font-size: 40px;
@@ -49,7 +55,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             <GiSnailEyes size={50} />
         </div>
 
-        <div class="box-card shadow-box-black-video">
+        <!-- <div class="box-card shadow-box-black-video">
             <span class="font-bold text-xl">Welcome to my corner of the internet.</span>
             <span>
                 I'm Larry, a passionate software developer, aspiring musician and all around enjoyer of all things tech. 
@@ -57,7 +63,9 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             <span>
                 My programming journey began in middle school with coding courses and assembling PCs. It has since led me through university and across various startups, each step deepening my knowledge and passion for technology and innovation.
             </span>
-        </div>
+        </div> -->
+
+        <iframe width="560" height="315" class="w-11/12 max-w-[560px] mt-10 rounded-lg shadow-box-black-video border-4 border-black" src="https://www.youtube.com/embed/e1U9r1yvlIM?si=kYXwc5MTLdgCclI_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <h2 class="text-black text-center mt-10 tracking-wider">My Tech Stack</h2>
 
@@ -218,7 +226,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
             </div>
         </div>
 
-        <div class="box-card shadow-box-black-video2">
+        <div class="box-card shadow-box-black-video">
             <i>Featured Project</i>
             <span class="font-bold text-xl">This Website</span>
             <span>Loosely designed in <b>Figma</b>, built using <b>Astro</b>. I hope you like it :D</span>

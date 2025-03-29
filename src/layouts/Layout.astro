@@ -37,7 +37,7 @@ import { ViewTransitions } from 'astro:transitions';
 			white 60%
 		);
 	}
-	html {
+	body {
 		font-family: system-ui, sans-serif;
 		background: linear-gradient(to left, #00a2ff, #9d80f5);
 		background-size: 400% 400%;
@@ -55,14 +55,14 @@ import { ViewTransitions } from 'astro:transitions';
 			monospace;
 	}
     @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 </style>
